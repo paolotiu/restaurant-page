@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background: #ffbb91;
+}
+
+header {
+    background: #faf3dd;
+}
+
+.tab {
+    padding: 5px 10%;
+    padding-bottom: 0;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+}
+
+.chosen {
+    background: #ffbb91;
+}
+
+.tab-container {
+    font-size: 15px;
+    width: 95%;
+    background: #64958f;
+    display: flex;
+    justify-content: space-evenly;
+    white-space: nowrap;
+    margin: 10px auto;
+    margin-bottom: 0;
+}
+
+.title {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    font-size: 90px;
+    color: #faf3dd;
+    font-family: 'Playfair Display', serif;
+}
+
+#content {
+    width: 95%;
+    margin: auto auto ;
+}
+
+nav {
+    text-align: center;
+}
+
+img {
+    height: 700px;
+    width: 100%;
+    margin-bottom: 40px;
+    display: block;
+    margin: auto;
+}
+
+footer {
+    width: 70%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.menu-container {
+    padding-top: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+    position: relative;
+    margin-left: 50px;
+    background: #faf3dd;
+    width: 250px;
+    height: 300px;
+    border-radius: 50px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.menu-item p {
+    margin-top: 10px;
+}
+
+.menu-img {
+    display: block;
+    margin-top: 18%;
+    border-radius: 40px;
+    height: 200px;
+    width: 200px;
+}
+
+.card-container{
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    display: inline-block;
+    background-color: transparent;
+    margin: 10px 20px;
+    width: 300px;
+    height: 200px;
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #faf3dd;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: transparent;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.logo{
+    margin-top: 17%;
+    max-height: 150px;
+}
+
+.text{
+    cursor: default;
+    font-size: xx-large;
+    margin-top: 80px;
+}
+
+.instagram{
+    margin-top: 80px;
+    height: 100px;
+    width: 100px;
+}
+
+@media only screen and (max-width: 900px){
+    img{
+        height: 200px;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+}
